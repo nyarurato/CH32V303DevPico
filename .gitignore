@@ -1,0 +1,20 @@
+# EasyEDA
+
+# Temporary / local cache
+*.tmp
+*.bak
+*.log
+.easyeda/
+EasyEDA/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+.venv
+*_backup
+easyeda-api-skill
+scripts
+
+.github/skills
+references
