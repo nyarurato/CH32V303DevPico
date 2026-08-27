@@ -15,9 +15,8 @@ Raspberry Pi Pico と同じ外形・ピンヘッダ位置を保ちながら、**
 | 電源 | USB Type-C 5V 入力 → 3.3V LDO |
 | クロック | HSE 16MHz クリスタル |
 | デバッグ | SWD（H1: SWDIO / GND / SWCLK の3ピン） |
-| 拡張 | 20pin × 2 ヘッダ（H2/H3）、Pico ピン配置互換 |
 
-## 回路構成 V0.1
+## 構成 V0.1
 
 ![](output/v0_1/Schematic.png)
 ![](output/v0_1/3D_PCB.png)
