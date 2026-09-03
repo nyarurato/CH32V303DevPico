@@ -33,6 +33,20 @@ Raspberry Pi Pico と同じ外形・ピンヘッダ位置を保ちながら、**
 
 発注先：JLCPCB（ Gerber.zip + BOM/PickAndPlace は JLCPCB SMT の形式に対応）
 
+## V0.1 実機動作確認
+
+2026-09-03に実装基板で以下を確認しました。
+
+| 項目 | 結果 |
+|---|---|
+| 電源 | VBUS / VSYS / 3V3の電圧、電源LED、異常発熱なしを確認 |
+| SWD / Flash | WCH-LinkEからCH32V303CBT6を認識し、書き込み・読戻し一致・リセット後および電源再投入後の自動起動を確認 |
+| クロック | 16MHz HSEからPLLで144MHz動作を確認（LSEは未実装のためOFF） |
+| LED1 | PA10のActive Low出力で点滅を確認 |
+| Pico互換ヘッダ | ヘッダへ配線された全26 GPIOでHigh / Low出力を実測確認 |
+| USB Device | USB CDCとして列挙し、Host↔Device双方向通信、USB抜き差し後およびリセット後の再列挙を確認 |
+
+
 ## 既知の制限・注意事項
 
 | # | 項目 | 重要度 | 対応 |
